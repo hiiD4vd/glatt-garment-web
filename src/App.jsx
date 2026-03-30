@@ -13,7 +13,6 @@ function App() {
 
   return (
     <div className="bg-[#FAFAFA] min-h-screen font-inter text-[#0F1115]">
-      <Navbar />
       {/* Conditional Rendering based on selectedProduct state */}
       {selectedProduct ? (
         <ProductDetail 
@@ -22,6 +21,7 @@ function App() {
         />
       ) : (
         <>
+          <Navbar />
           <SequenceHero />
           <TrustBanner />
           <AboutCapacity />

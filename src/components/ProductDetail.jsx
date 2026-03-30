@@ -35,12 +35,12 @@ export default function ProductDetail({ product, onBack }) {
         
         {/* Left: Interactive Image Gallery */}
         <div className="w-full lg:w-1/2 flex flex-col gap-6">
-          <div className="relative w-full aspect-[4/5] bg-gray-50 rounded-lg overflow-hidden group">
+          <div className="relative w-full aspect-[9/16] max-h-[75vh] bg-transparent rounded-lg overflow-hidden flex items-center justify-center group">
             <img 
               src={activeImage} 
               alt={title}
               key={activeImage} // force re-render for simple transition effect if needed
-              className="w-full h-full object-cover object-center animate-[fadeIn_0.3s_ease-in-out] transition-transform duration-700 ease-out group-hover:scale-105"
+              className="w-full h-full object-contain object-center animate-[fadeIn_0.3s_ease-in-out] transition-transform duration-700 ease-out group-hover:scale-105"
             />
           </div>
           <div className="flex gap-4">
@@ -48,9 +48,9 @@ export default function ProductDetail({ product, onBack }) {
               <button 
                 key={idx}
                 onClick={() => setActiveImage(img)}
-                className={`w-20 md:w-24 aspect-[4/5] overflow-hidden rounded-md transition-all duration-300 ${activeImage === img ? 'opacity-100 ring-1 ring-black ring-offset-4' : 'opacity-40 hover:opacity-100'}`}
+                className={`w-20 md:w-24 aspect-[9/16] overflow-hidden rounded-md transition-all duration-300 bg-transparent ${activeImage === img ? 'opacity-100 ring-1 ring-black ring-offset-4' : 'opacity-40 hover:opacity-100'}`}
               >
-                <img src={img} alt={`View ${idx + 1}`} className="w-full h-full object-cover" />
+                <img src={img} alt={`View ${idx + 1}`} className="w-full h-full object-contain" />
               </button>
             ))}
           </div>

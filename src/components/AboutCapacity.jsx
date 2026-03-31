@@ -1,29 +1,20 @@
-import React, { useState, useEffect } from 'react';
-import { motion, useInView } from 'framer-motion';
+import React, { useRef, useState, useEffect } from 'react';
+import { motion, useInView, animate } from 'framer-motion';
 
 const Counter = ({ value, label, suffix = "" }) => {
   const [count, setCount] = useState(0);
-  const ref = React.useRef(null);
+  const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-50px" });
 
   useEffect(() => {
     if (isInView) {
-      let start = 0;
       const end = parseInt(value, 10);
-      const duration = 2400;
-      const increment = end / (duration / 16);
-      
-      const timer = setInterval(() => {
-        start += increment;
-        if (start >= end) {
-          clearInterval(timer);
-          setCount(end);
-        } else {
-          setCount(Math.floor(start));
-        }
-      }, 16);
-      
-      return () => clearInterval(timer);
+      const controls = animate(0, end, {
+        duration: 2.5,
+        ease: "easeOut",
+        onUpdate: (v) => setCount(Math.floor(v)),
+      });
+      return controls.stop;
     }
   }, [isInView, value]);
 
@@ -73,10 +64,10 @@ const AboutCapacity = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-          className="bg-white p-10 md:p-14 rounded-none border border-gray-200 relative overflow-hidden shadow-sm"
+          className="bg-white p-10 md:p-14 rounded-none border border-gray-200 relative overflow-hidden shadow-sm group hover:border-[#C2A878]/40 transition-colors duration-700"
         >
           {/* Subtle noise/gradient background for the card */}
-          <div className="absolute top-0 right-0 w-64 h-64 bg-[#C2A878]/5 rounded-bl-[100px] blur-3xl pointer-events-none"></div>
+          <div className="absolute top-0 right-0 w-64 h-64 bg-[#C2A878]/5 rounded-bl-[100px] blur-3xl pointer-events-none transition-transform duration-1000 group-hover:scale-125"></div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-16 gap-x-12 relative z-10">
             <Counter value="20000" suffix="+" label="Pcs / Bulan" />
@@ -84,11 +75,11 @@ const AboutCapacity = () => {
             <Counter value="150" suffix="+" label="Klien Perusahaan" />
             
             <div className="flex flex-col justify-center">
-              <div className="font-clash font-medium text-4xl text-[#0F1115] mb-3 flex items-baseline tracking-tight">
-                ISO <span className="text-[#C2A878] ml-2 font-light">9001</span>
+              <div className="font-clash font-medium text-5xl md:text-6xl text-[#0F1115] mb-3 flex items-baseline tracking-tight">
+                99.8<span className="text-3xl text-[#C2A878] ml-1 font-light">%</span>
               </div>
               <div className="text-[#0F1115]/60 font-medium text-xs uppercase tracking-[0.15em] leading-relaxed">
-                Manajemen <br />Mutu (Placeholder)
+                Tingkat <br />Kepuasan Klien
               </div>
             </div>
           </div>

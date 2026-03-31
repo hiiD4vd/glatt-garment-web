@@ -7,13 +7,13 @@ const servicesList = [
     id: '01',
     title: 'Kemeja PDH / PDL',
     desc: 'Seragam representatif dengan material drill premium yang menunjang mobilitas dan estetika korporat.',
-    img: 'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?q=80&w=1500&auto=format&fit=crop'
+    img: '/images/seragam (2).png'
   },
   {
     id: '02',
     title: 'Wearpack Safety',
     desc: 'Pakaian keselamatan fungsional dengan fitur reflektif dan material tahan uji untuk sektor industri berat.',
-    img: 'https://images.unsplash.com/photo-1621685799982-f5449fbdd4c9?q=80&w=1500&auto=format&fit=crop'
+    img: '/images/seragam(.png'
   },
   {
     id: '03',
@@ -25,13 +25,13 @@ const servicesList = [
     id: '04',
     title: 'Seragam Medis / Lab',
     desc: 'Standar higienis tinggi dengan material anti-statis dan anti-bakteri untuk area steril dan cleanroom.',
-    img: 'https://images.unsplash.com/photo-1584982751601-97dcc096659c?q=80&w=1500&auto=format&fit=crop'
+    img: '/images/medis.png'
   },
   {
     id: '05',
-    title: 'Jaket & Outerwear',
-    desc: 'Siluet modern untuk aktivitas lapangan dan manajemen, material water-repellent dengan konstruksi kokoh.',
-    img: 'https://images.unsplash.com/photo-1551028719-0c1efcf2b2fe?q=80&w=1500&auto=format&fit=crop'
+    title: 'Seragam Pabrik',
+    desc: 'Pakaian kerja berdurabilitas tinggi, dirancang dengan material teknis tahan aus untuk pergerakan dinamis dan efisiensi operasional harian.',
+    img: '/images/seragam.png'
   }
 ];
 
@@ -90,7 +90,7 @@ const Services = () => {
         </div>
 
         {/* Right: Dynamic Image */}
-        <div className="lg:col-span-5 hidden lg:block h-[600px] sticky top-32">
+        <div className="lg:col-span-5 hidden lg:block aspect-[9/16] h-auto sticky top-32">
           <div className="w-full h-full relative rounded-none overflow-hidden bg-[#1C1F26] group">
             <AnimatePresence mode="wait">
               <motion.img

@@ -12,7 +12,7 @@ function App() {
   const [selectedProduct, setSelectedProduct] = useState(null);
 
   return (
-    <div className="bg-[#FAFAFA] min-h-screen font-inter text-[#0F1115]">
+    <div className="bg-[#FAFAFA] min-h-screen font-inter text-[#0A0C10]">
       {/* Conditional Rendering based on selectedProduct state */}
       {selectedProduct ? (
         <ProductDetail 

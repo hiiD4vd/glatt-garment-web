@@ -7,9 +7,9 @@ const regions = [
 
 const TrustBanner = () => {
   return (
-    <div className="bg-[#0F1115] text-white py-6 border-b border-[#1C1F26] overflow-hidden relative z-30 flex items-center">
+    <div className="bg-[#0A0C10] text-white py-6 border-b border-[#1C1F26] overflow-hidden relative z-30 flex items-center">
       <div className="max-w-7xl w-full mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-6">
-        <p className="font-clash font-medium text-[#C2A878] whitespace-nowrap uppercase tracking-[0.15em] text-xs shrink-0">
+        <p className="font-clash font-medium text-[#A3B1C6] whitespace-nowrap uppercase tracking-[0.15em] text-xs shrink-0">
           Dipercaya Oleh Kawasan:
         </p>
 

@@ -14,13 +14,13 @@ const FooterContact = () => {
            viewport={{ once: true }}
            transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
         >
-          <div className="inline-block px-4 py-1.5 border border-[#C2A878]/30 text-[#C2A878] font-medium text-xs mb-8 tracking-[0.15em] uppercase">
+          <div className="inline-block px-4 py-1.5 border border-[#A3B1C6]/30 text-[#A3B1C6] font-medium text-xs mb-8 tracking-[0.15em] uppercase">
             Hubungi Kami
           </div>
-          <h2 className="font-clash font-medium text-4xl md:text-5xl text-[#0F1115] mb-8 leading-[1.15] tracking-tight">
-            Mari Konsultasikan <br /> <span className="text-[#C2A878] italic font-normal">Kebutuhan Anda.</span>
+          <h2 className="font-clash font-medium text-4xl md:text-5xl text-[#0A0C10] mb-8 leading-[1.15] tracking-tight">
+            Mari Konsultasikan <br /> <span className="text-[#A3B1C6] italic font-normal">Kebutuhan Anda.</span>
           </h2>
-          <p className="text-[#0F1115]/60 text-base md:text-lg mb-16 max-w-md leading-relaxed font-light tracking-wide">
+          <p className="text-[#0A0C10]/60 text-base md:text-lg mb-16 max-w-md leading-relaxed font-light tracking-wide">
             Konsultasikan pemilihan material, rancangan desain, hingga estimasi timeline produksi dengan tim ahli kami.
           </p>
 
@@ -28,11 +28,11 @@ const FooterContact = () => {
             <div className="flex flex-col gap-6">
               <div className="flex items-start gap-6">
                 <div className="w-12 h-12 rounded-none border border-[#E5E7EB] flex items-center justify-center shrink-0">
-                  <MapPin className="text-[#0F1115]" size={20} strokeWidth={1.5} />
+                  <MapPin className="text-[#0A0C10]" size={20} strokeWidth={1.5} />
                 </div>
                 <div className="w-full">
-                  <h4 className="font-medium text-[#0F1115] text-sm uppercase tracking-widest mb-2">Pabrik & Kantor Cikarang</h4>
-                  <p className="text-[#0F1115]/60 leading-relaxed font-light text-sm mb-4">Jl. Industri Pratama Blok C1 No.12<br/>Kawasan Industri Jababeka II<br/>Bekasi, Jawa Barat 17530</p>
+                  <h4 className="font-medium text-[#0A0C10] text-sm uppercase tracking-widest mb-2">Pabrik & Pusat Produksi</h4>
+                  <p className="text-[#0A0C10]/60 leading-relaxed font-light text-sm mb-4">Kp. Gombong, RT/Rw. 002/005<br/>Ds. Pasir Gombong, Kec. Cikarang Utara<br/>Kab. Bekasi</p>
                   
                   {/* Embedded Google Maps (Grayscale filter to match aesthetic) */}
                   <div className="w-full h-48 border border-[#E5E7EB] overflow-hidden group">
@@ -53,31 +53,31 @@ const FooterContact = () => {
 
             <div className="flex items-start gap-6">
               <div className="w-12 h-12 rounded-none border border-[#E5E7EB] flex items-center justify-center shrink-0">
-                 <Phone className="text-[#0F1115]" size={20} strokeWidth={1.5} />
+                 <Phone className="text-[#0A0C10]" size={20} strokeWidth={1.5} />
               </div>
               <div>
-                <h4 className="font-medium text-[#0F1115] text-sm uppercase tracking-widest mb-2">Telepon Resmi</h4>
-                <p className="text-[#0F1115]/80 font-medium text-lg tracking-wide">0852-2278-0202</p>
+                <h4 className="font-medium text-[#0A0C10] text-sm uppercase tracking-widest mb-2">WhatsApp / Telepon</h4>
+                <p className="text-[#0A0C10]/80 font-medium text-lg tracking-wide">0878-2810-7303</p>
               </div>
             </div>
 
             <div className="flex items-start gap-6">
               <div className="w-12 h-12 rounded-none border border-[#E5E7EB] flex items-center justify-center shrink-0">
-                <Mail className="text-[#0F1115]" size={20} strokeWidth={1.5} />
+                <Mail className="text-[#0A0C10]" size={20} strokeWidth={1.5} />
               </div>
               <div>
-                <h4 className="font-medium text-[#0F1115] text-sm uppercase tracking-widest mb-2">Alamat Surel</h4>
-                <p className="text-[#0F1115]/80 text-base font-light tracking-wide">sales@warriorkonveksi.com</p>
+                <h4 className="font-medium text-[#0A0C10] text-sm uppercase tracking-widest mb-2">Alamat Surel</h4>
+                <p className="text-[#0A0C10]/80 text-base font-light tracking-wide">Glatt.garment@gmail.com</p>
               </div>
             </div>
           </div>
 
           {/* Socials */}
           <div className="flex gap-4">
-            <a href="#" className="w-12 h-12 border border-[#E5E7EB] text-[#0F1115] flex items-center justify-center hover:bg-[#0F1115] hover:text-white transition-all duration-500">
+            <a href="#" className="w-12 h-12 border border-[#E5E7EB] text-[#0A0C10] flex items-center justify-center hover:bg-[#0A0C10] hover:text-white transition-all duration-500">
               <Instagram size={18} strokeWidth={1.5} />
             </a>
-            <a href="#" className="w-12 h-12 border border-[#E5E7EB] text-[#0F1115] flex items-center justify-center hover:bg-[#0F1115] hover:text-white transition-all duration-500">
+            <a href="#" className="w-12 h-12 border border-[#E5E7EB] text-[#0A0C10] flex items-center justify-center hover:bg-[#0A0C10] hover:text-white transition-all duration-500">
               <Linkedin size={18} strokeWidth={1.5} />
             </a>
           </div>
@@ -91,23 +91,23 @@ const FooterContact = () => {
           transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           className="bg-[#FAFAFA] p-10 md:p-14 border border-[#E5E7EB] relative h-fit"
         >
-          <h3 className="font-clash font-medium text-2xl text-[#0F1115] mb-10 tracking-tight">Permintaan Penawaran</h3>
+          <h3 className="font-clash font-medium text-2xl text-[#0A0C10] mb-10 tracking-tight">Permintaan Penawaran</h3>
           
           <form className="space-y-8">
             <div className="grid grid-cols-1 gap-8">
               <div className="space-y-3">
-                <label className="text-xs font-semibold uppercase tracking-widest text-[#0F1115]/60">Nama Perwakilan</label>
-                <input type="text" className="w-full bg-transparent border-0 border-b border-[#D1D5DB] py-3 focus:outline-none focus:border-[#0F1115] transition-colors rounded-none placeholder-gray-400 font-light text-[#0F1115]" placeholder="Mis. John Doe" />
+                <label className="text-xs font-semibold uppercase tracking-widest text-[#0A0C10]/60">Nama Perwakilan</label>
+                <input type="text" className="w-full bg-transparent border-0 border-b border-[#D1D5DB] py-3 focus:outline-none focus:border-[#0A0C10] transition-colors rounded-none placeholder-gray-400 font-light text-[#0A0C10]" placeholder="Mis. John Doe" />
               </div>
               <div className="space-y-3">
-                <label className="text-xs font-semibold uppercase tracking-widest text-[#0F1115]/60">Nama Perusahaan</label>
-                <input type="text" className="w-full bg-transparent border-0 border-b border-[#D1D5DB] py-3 focus:outline-none focus:border-[#0F1115] transition-colors rounded-none placeholder-gray-400 font-light text-[#0F1115]" placeholder="PT Karya Mandiri" />
+                <label className="text-xs font-semibold uppercase tracking-widest text-[#0A0C10]/60">Nama Perusahaan</label>
+                <input type="text" className="w-full bg-transparent border-0 border-b border-[#D1D5DB] py-3 focus:outline-none focus:border-[#0A0C10] transition-colors rounded-none placeholder-gray-400 font-light text-[#0A0C10]" placeholder="PT Karya Mandiri" />
               </div>
             </div>
 
             <div className="space-y-3">
-              <label className="text-xs font-semibold uppercase tracking-widest text-[#0F1115]/60">Estimasi Kuantitas</label>
-              <select className="w-full bg-transparent border-0 border-b border-[#D1D5DB] py-3 focus:outline-none focus:border-[#0F1115] transition-colors rounded-none text-[#0F1115] font-light appearance-none">
+              <label className="text-xs font-semibold uppercase tracking-widest text-[#0A0C10]/60">Estimasi Kuantitas</label>
+              <select className="w-full bg-transparent border-0 border-b border-[#D1D5DB] py-3 focus:outline-none focus:border-[#0A0C10] transition-colors rounded-none text-[#0A0C10] font-light appearance-none">
                 <option value="">Pilih Kuantitas</option>
                 <option value="50-100">50 - 100 Pcs</option>
                 <option value="101-500">101 - 500 Pcs</option>
@@ -117,14 +117,14 @@ const FooterContact = () => {
             </div>
 
             <div className="space-y-3">
-              <label className="text-xs font-semibold uppercase tracking-widest text-[#0F1115]/60">Detail Kebutuhan</label>
-              <textarea rows={3} className="w-full bg-transparent border-0 border-b border-[#D1D5DB] py-3 focus:outline-none focus:border-[#0F1115] transition-colors rounded-none resize-none placeholder-gray-400 font-light text-[#0F1115]" placeholder="Jelaskan kebutuhan spesifik Anda..."></textarea>
+              <label className="text-xs font-semibold uppercase tracking-widest text-[#0A0C10]/60">Detail Kebutuhan</label>
+              <textarea rows={3} className="w-full bg-transparent border-0 border-b border-[#D1D5DB] py-3 focus:outline-none focus:border-[#0A0C10] transition-colors rounded-none resize-none placeholder-gray-400 font-light text-[#0A0C10]" placeholder="Jelaskan kebutuhan spesifik Anda..."></textarea>
             </div>
 
             <motion.button 
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="w-full bg-[#0F1115] text-[#FAFAFA] py-5 mt-4 rounded-none font-medium text-xs tracking-[0.2em] uppercase hover:bg-[#C2A878] hover:text-[#0F1115] transition-colors duration-500 flex items-center justify-center gap-4 group"
+              className="w-full bg-[#0A0C10] text-[#FAFAFA] py-5 mt-4 rounded-none font-medium text-xs tracking-[0.2em] uppercase hover:bg-[#A3B1C6] hover:text-[#0A0C10] transition-colors duration-500 flex items-center justify-center gap-4 group"
               type="button"
             >
               Kirim Pesan 
@@ -138,12 +138,12 @@ const FooterContact = () => {
       {/* Footer Bottom */}
       <div className="border-t border-[#E5E7EB] py-8 bg-[#FAFAFA]">
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-6">
-           <p className="text-[#0F1115]/40 text-xs font-medium tracking-widest uppercase">
-             &copy; 2026 Warrior Konveksi.
+           <p className="text-[#0A0C10]/40 text-xs font-medium tracking-widest uppercase">
+             &copy; 2026 GLATT Garment Industries.
            </p>
-           <div className="flex gap-8 text-xs text-[#0F1115]/40 font-medium tracking-widest uppercase">
-              <a href="#" className="hover:text-[#0F1115] transition-colors duration-300">Privacy Policy</a>
-              <a href="#" className="hover:text-[#0F1115] transition-colors duration-300">Terms of Service</a>
+           <div className="flex gap-8 text-xs text-[#0A0C10]/40 font-medium tracking-widest uppercase">
+              <a href="#" className="hover:text-[#0A0C10] transition-colors duration-300">Privacy Policy</a>
+              <a href="#" className="hover:text-[#0A0C10] transition-colors duration-300">Terms of Service</a>
            </div>
         </div>
       </div>

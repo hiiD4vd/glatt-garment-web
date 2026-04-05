@@ -72,10 +72,10 @@ export default function HorizontalCarousel({ onProductSelect }) {
   };
 
   return (
-    <section className="relative w-full overflow-hidden bg-white py-20 flex flex-col items-center">
+    <section className="relative w-full overflow-hidden bg-[#FAFAFA] py-20 flex flex-col items-center">
       <div className="mb-10 text-center">
-        <h2 className="text-3xl font-bold uppercase tracking-widest text-[#1c1c1c]">Latest Collections</h2>
-        <p className="text-gray-500 mt-2">Explore our newest arrivals</p>
+        <h2 className="text-3xl font-bold uppercase tracking-widest text-[#0A0C10]">Production Portfolios</h2>
+        <p className="text-gray-500 mt-2 font-light tracking-wide">Eksplorasi mahakarya manufaktur kami</p>
       </div>
 
       {/* Overflow container */}
@@ -92,7 +92,7 @@ export default function HorizontalCarousel({ onProductSelect }) {
         {isHoveringContainer && hoveredItemText && (
           <div 
             ref={cursorRef}
-            className="fixed top-0 left-0 pointer-events-none z-50 bg-[#111] text-white px-4 py-1.5 text-[10px] sm:text-xs font-semibold uppercase tracking-[0.25em] rounded-full shadow-[0_4px_20px_rgba(0,0,0,0.15)] flex items-center justify-center whitespace-nowrap"
+            className="fixed top-0 left-0 pointer-events-none z-50 bg-[#A3B1C6] text-[#0A0C10] px-5 py-2 text-[10px] sm:text-xs font-semibold uppercase tracking-[0.25em] rounded-full shadow-[0_4px_20px_rgba(0,0,0,0.15)] flex items-center justify-center whitespace-nowrap"
             style={{ 
               willChange: 'transform'
             }}

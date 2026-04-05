@@ -27,8 +27,8 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
         {/* Logo */}
-        <a href="#" className={`font-clash font-semibold text-xl tracking-[0.15em] transition-colors duration-500 ${isScrolled ? 'text-[#0F1115]' : 'text-white'}`}>
-          WARRIOR
+        <a href="#" className={`font-clash font-semibold text-2xl tracking-[0.2em] transition-colors duration-500 ${isScrolled ? 'text-[#0A0C10]' : 'text-white'}`}>
+          GLATT
         </a>
 
         {/* Desktop Links */}
@@ -54,8 +54,8 @@ const Navbar = () => {
             whileTap={{ scale: 0.98 }}
             className={`px-7 py-3 rounded-none font-medium text-xs tracking-widest uppercase transition-all duration-300 border ${
               isScrolled 
-                ? 'bg-[#0F1115] text-white border-[#0F1115] hover:bg-[#C2A878] hover:border-[#C2A878]' 
-                : 'bg-white text-[#0F1115] border-white hover:bg-transparent hover:text-white'
+                ? 'bg-[#0A0C10] text-white border-[#0A0C10] hover:bg-[#A3B1C6] hover:border-[#A3B1C6] hover:text-[#0A0C10]' 
+                : 'bg-white text-[#0A0C10] border-white hover:bg-transparent hover:text-white'
             }`}
           >
             Minta Penawaran

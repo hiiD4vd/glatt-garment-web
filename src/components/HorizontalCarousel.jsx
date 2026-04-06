@@ -5,55 +5,61 @@ const mockCarouselData = [
     id: 1,
     imageA: "/images/model (2).png",
     imageB: "/images/model (1).png",
-    title: "Item 1"
+    title: "Karakter Operator Pabrik"
   },
   {
     id: 2,
     imageA: "/images/model (4).png",
     imageB: "/images/model (3).png",
-    title: "Item 2"
+    title: "Pakaian Kasual / Custom Sablon"
   },
   {
     id: 3,
     imageA: "/images/model (6).png",
     imageB: "/images/model (5).png",
-    title: "Item 3"
+    title: "Seragam Kasual / Polo Custom"
   },
   {
     id: 4,
     imageA: "/images/model (8).png",
     imageB: "/images/model (7).png",
-    title: "Item 4"
+    title: "Pakaian Dinas Keamanan"
   },
   {
     id: 5,
     imageA: "/images/model (10).png",
     imageB: "/images/model (9).png",
-    title: "Item 5"
+    title: "Kemeja PDL Lapangan"
   },
   {
     id: 6,
     imageA: "/images/model (12).png",
     imageB: "/images/model (11).png",
-    title: "Item 6"
+    title: "Seragam Tambang / Proyek"
   },
   {
     id: 7,
     imageA: "/images/model (13).png",
     imageB: "/images/model (14).png",
-    title: "Item 7"
+    title: "Seragam PDH / Pakaian Dinas Harian"
   },
   {
     id: 8,
     imageA: "/images/model (16).png",
     imageB: "/images/model (15).png",
-    title: "Item 8"
+    title: "Jaket Varsity / Kampus"
   },
   {
     id: 9,
     imageA: "/images/model (18).png",
     imageB: "/images/model (17).png",
-    title: "Item 9"
+    title: "Jaket Hoodie & Training"
+  },
+  {
+    id: 10,
+    imageA: "/images/model (20).png",
+    imageB: "/images/model (19).png",
+    title: "Seragam Koki / Chef Jacket"
   }
 ];
 

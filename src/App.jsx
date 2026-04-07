@@ -7,6 +7,7 @@ import Services from './components/Services';
 import FooterContact from './components/FooterContact';
 import HorizontalCarousel from "./components/HorizontalCarousel";
 import ProductDetail from "./components/ProductDetail";
+import CustomRequest from "./components/CustomRequest";
 
 function App() {
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -27,6 +28,7 @@ function App() {
           <AboutCapacity />
           <Services />
           <HorizontalCarousel onProductSelect={setSelectedProduct} />
+          <CustomRequest />
           <FooterContact />
         </>
       )}

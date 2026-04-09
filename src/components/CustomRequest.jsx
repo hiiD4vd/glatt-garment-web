@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { CheckCircle, ArrowRight, Shirt, Briefcase, Layers, ShoppingBag, MessageSquare, ArrowLeft, Check, AlertCircle } from 'lucide-react';
+import { CheckCircle, ArrowRight, Shirt, Briefcase, Layers, ShoppingBag, MessageSquare, ArrowLeft, Check, AlertCircle, Ruler } from 'lucide-react';
 
 const garmentTypes = [
   { id: 'kaos', label: 'T-Shirt / Kaos', icon: Shirt, desc: 'Kerah bulat, V-Neck, Polo Shirt' },

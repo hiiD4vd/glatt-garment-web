@@ -19,6 +19,10 @@ const SequenceHero = () => {
       <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-[#0A0C10] to-transparent z-10 pointer-events-none" />
       <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-[#0A0C10]/80 to-transparent z-10 pointer-events-none" />
 
+      {/* Dark overlay specifically at edges for seamless transition */}
+      <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-[#0A0C10] to-transparent z-10 pointer-events-none" />
+      <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-[#0A0C10]/80 to-transparent z-10 pointer-events-none" />
+
       {/* Static Text Overlay */}
       <div className="relative z-20 w-full max-w-7xl mx-auto px-6 md:px-12 text-white flex flex-col items-center justify-center text-center mt-12 pointer-events-none">
         <div className="max-w-5xl pointer-events-auto">

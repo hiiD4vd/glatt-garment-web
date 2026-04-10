@@ -9,6 +9,8 @@ import HorizontalCarousel from "./components/HorizontalCarousel";
 import ProductDetail from "./components/ProductDetail";
 import CustomRequest from "./components/CustomRequest";
 import ProductionProcess from "./components/ProductionProcess";
+import QualityCertifications from "./components/QualityCertifications";
+import FaqSection from "./components/FaqSection";
 
 function App() {
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -30,6 +32,8 @@ function App() {
           <Services />
           <HorizontalCarousel onProductSelect={setSelectedProduct} />
           <ProductionProcess />
+          <QualityCertifications />
+          <FaqSection />
           <CustomRequest />
           <FooterContact />
         </>
